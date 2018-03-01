@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Deep Lake Demo</title>
+
+	
+	<!-- Materialize.css style -->
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"  media="screen,projection"/>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<!-- JQuery UI CSS -->
+	<link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Custom Theme Style -->
+	<link href="assets/css/app.css?<?php echo time();?>" rel="stylesheet">
+</head>
+<body class="grey">
+	<!-- .container-->
+	<div class="container">
+		<h1 class="text-center">Arithmetic Evaluator</h1>
+		<!-- .section-->
+		<div class="section">
+			<!-- .row .container-->
+			<div class="row container">
+				<!-- .col-->
+				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+					<!-- .card-->
+					<div class="card">
+						<!-- .card-content-->
+						<div class="card-content">
+							<p><b>Enter your arithmetic expression below:</b></p>
+							<br/>
+							
+							<div class="notif"></div>
+							
+							<!-- .form-->
+							<form>
+								<!-- .row-->
+								<div class="row">
+									<!-- .input-field-->
+									<div class="input-field col m12 s12">
+										<i class="material-icons prefix">functions</i>
+										<input type="text" name="expression" id="expression"title="Please enter your arithmetic expression" class="validate">
+										<label for="expression">Arithmetic Expression</label>
+									</div>
+									<!-- /.input-field-->
+								</div>
+								<!-- /.row-->
+								
+								<!-- .row-->
+								<div class="row">
+									<div class="input-field col s12">
+										<button type="button" class="btn btn-primary btn-block" onclick="javascript:evaluateExpression();">EVALUATE</button>
+									</div>
+								</div>
+								<!-- /.row-->
+							</form>
+							<!-- /.form-->
+						</div>
+						<!-- /.card-content-->
+					</div>
+					<!-- /.card-->
+				</div>
+				<!-- /.col-->
+			</div>
+			<!-- /.row .container-->
+		</div>
+		<!-- /.section-->
+	</div>
+	<!-- /.container-->	
+	
+
+
+	<!-- JQuery scripts
+    ================================================== -->
+     <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
+	<!-- JQuery UI JavaScript -->
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	
+	<!-- Bootstrap core JavaScript -->	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<!--Materialize Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	
+	<!-- Custom App Script -->
+    <script src="assets/js/app.js"></script>
+	
+</body>
+</html>
